@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -22,9 +22,10 @@ requirements:
     - python >=3.6,<4
     - numpy >=1.14,<2
     - matplotlib >=2.2,<3
-    - h5py >=2.8,<3
-    - tifffile >=0.15,<1.0
+    - h5py >=2.9,<3
     - pytest >=3.5,<4
+    - scipy >=1.1,<2
+    - tifffile >=0.15,<1.0
 
 test:
   imports:
@@ -42,3 +43,4 @@ extra:
   recipe-maintainers:
     - dean0x7d
     - onnodb
+    - JoepVanlier
