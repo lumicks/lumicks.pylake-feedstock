@@ -25,7 +25,7 @@ requirements:
     - h5py >=2.9,<3
     - pytest >=3.5,<4
     - scipy >=1.1,<2
-    - tifffile >=2018.11.6
+    - tifffile >=0.15,<1.0
 
 test:
   imports:
