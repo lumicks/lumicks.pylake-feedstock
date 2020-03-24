@@ -1,5 +1,5 @@
 {% set name = "lumicks.pylake" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2266caa8b800802b2a27647f8b3b30eee555c1fe7ab7e3884c2467f3980a6f1
+  sha256: b5b3239775b2e29c291cf12fb5316fc9921d8cfc96d7b4546ef09310616a906b
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ about:
   home: https://github.com/lumicks/pylake
   license: Apache 2.0
   license_file: license.md
-  summary: 'Data analysis tools for Lumicks Bluelake'
+  summary: Data analysis tools for Lumicks Bluelake
   dev_url: https://github.com/lumicks/pylake
 
 extra:
