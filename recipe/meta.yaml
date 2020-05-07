@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.6,<4
     - numpy >=1.14,<2
-    - matplotlib >=2.2
+    - matplotlib-base >=2.2
     - h5py >=2.9,<3
     - pytest >=3.5
     - scipy >=1.1,<2
