@@ -1,5 +1,5 @@
 {% set name = "lumicks.pylake" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6f7edb6f63991adfd52bda9442f4cc48048d2ff102b948c1a7d48db1b82f3d7c
+  sha256: 9178271006d8ed07336ca8dfe03a577f0e1c2da4ac852a3e199a51f03a7847f7
 
 build:
   noarch: python
@@ -27,11 +27,16 @@ requirements:
     - scipy >=1.1,<2
     - tifffile >=0.15,<1.0
     - tabulate ==0.8.6
+    - opencv >=3.0
 
 test:
   imports:
     - lumicks.pylake
     - lumicks.pylake.tests
+  requires:
+    - pytest
+  commands:
+    - pytest --pyargs lumicks.pylake
 
 about:
   home: https://github.com/lumicks/pylake
