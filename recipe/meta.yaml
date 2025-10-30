@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 {% set name = "lumicks.pylake" %}
 {% set file_name = "lumicks_pylake" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ file_name }}-{{ version }}.tar.gz
-  sha256: 473dd2eab4560a3525e8ad6e1ecb406239db9681aec2abac4b71553780497b85
+  sha256: a9170f582c2d6117c51ee67855bb8084169eadd54c7418b32cc52ec7d88930ea
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - pytest >=7.4
     - scipy >=1.9,<2
     - tifffile >=2022.7.28
-    - tabulate >=0.8.8,<0.9
+    - tabulate >=0.8.8,<0.11
     - cachetools >=3.1
     - deprecated >=1.2.8
     - scikit-learn >=0.18.0
